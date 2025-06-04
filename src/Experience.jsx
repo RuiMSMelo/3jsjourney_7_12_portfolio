@@ -47,7 +47,16 @@ export default function Experience() {
                             <iframe src='https://ruimsmelo.github.io/my-portfolio/#/en' />
                         </Html>
                     </primitive>
-                    <Text>RUI SERÔDIO MELO</Text>
+                    <Text
+                        font='./bangers-v20-latin-regular.woff'
+                        fontSize={0.9}
+                        position={[2, 0.75, 0.75]}
+                        rotation-y={-1.25}
+                        maxWidth={2}
+                        textAlign='center'
+                    >
+                        RUI MELO
+                    </Text>
                 </Float>
             </PresentationControls>
             <ContactShadows
