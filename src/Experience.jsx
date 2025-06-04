@@ -1,4 +1,5 @@
 import {
+    Text,
     Html,
     ContactShadows,
     Float,
@@ -15,7 +16,7 @@ export default function Experience() {
     return (
         <>
             <Environment preset='city' />
-            <color args={['#0b232e']} attach='background' />
+            <color args={['rgb(1, 5, 11)']} attach='background' />
 
             <PresentationControls
                 global
@@ -26,6 +27,14 @@ export default function Experience() {
                 snap
             >
                 <Float rotationIntensity={0.1}>
+                    <rectAreaLight
+                        width={2.5}
+                        height={1.65}
+                        intensity={65}
+                        color={'rgb(18, 105, 212)'}
+                        rotation={[0.1, Math.PI, 0]}
+                        position={[0, 0.55, -1.15]}
+                    />
                     <primitive object={computer.scene} position-y={-1.2}>
                         <Html
                             wrapperClass='htmlScreen'
@@ -38,6 +47,7 @@ export default function Experience() {
                             <iframe src='https://ruimsmelo.github.io/my-portfolio/#/en' />
                         </Html>
                     </primitive>
+                    <Text>RUI SERÔDIO MELO</Text>
                 </Float>
             </PresentationControls>
             <ContactShadows
